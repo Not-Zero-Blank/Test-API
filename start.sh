@@ -8,11 +8,7 @@ appdll="testapi/Test-Application.dll"
 runtime="testapi/Test-Application.runtimeconfig.json"
 wget=/usr/bin/wget
 
-if test -d "/testapi"; then
-    echo "Dictionary /testapi exists"
-    else
-    mkdir "/testapi"
-fi
+mkdir testapi
 if test -f "$dll1"; then
     echo "$dll1 exist."
     else
@@ -62,3 +58,4 @@ if test -f "$runtime"; then
     wget "https://github.com/Not-Zero-Blank/Test-API/releases/download/release/Test-Application.runtimeconfig.json"
     cd -
 fi
+dotnet Test-Application.dll
