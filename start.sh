@@ -58,4 +58,5 @@ if test -f "$runtime"; then
     wget "https://github.com/Not-Zero-Blank/Test-API/releases/download/release/Test-Application.runtimeconfig.json"
     cd -
 fi
+cd testapi
 dotnet Test-Application.dll
